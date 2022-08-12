@@ -6,9 +6,32 @@ Dark blue: #004369
 Red: #DB1F48
 */
 
-/*body text*/
+/*border box*/
+* {
+  box-sizing: border-box;
+}
+
+/*layout styling*/
+.container {
+  padding: 15px;
+  max-width: 1200px;
+}
+
+/*header*/
+header {
+  background-color: #E5DDC8;
+  text-align: center;
+  position: fixed;
+  padding: 5px 0 0 0;
+  -webkit-box-shadow: 0px 10px 10px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px 10px 10px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         0px 10px 10px 0px rgba(50, 50, 50, 0.75);
+  width: 100%;
+}
+
+/*body*/
 body {
-  background-color:ivory;
+  background-color: #fff;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 300;
@@ -16,13 +39,57 @@ body {
   color: #004369;
 }
 
+/*nav (header & footer)*/
+nav {
+  display: inline-block;
+  width: 100%;
+}
+nav > ul {
+  list-style-type:none;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block
+}
+nav > ul > li > a {
+  padding: 0 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+nav > ul > li > a:visited {
+  color: #004369;
+}
+nav > ul > li > a:active {
+  font-weight: 700;
+}
+nav > ul > li > a:hover, a:focus {
+  color: #01949A;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+/*hero*/
+#hero {
+  background-color: #E5DDC8;
+  padding: 10px 0;
+  display: inline-block;
+  width: 100%
+}
+
 /*headings*/
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
-h1 {
-  font-size: 2.75em;
+#hero h1 {
+  font-size: 2em;
   font-weight: 700;
+  text-align: center;
+}
+h1 {
+  font-size: 2.25em;
+  font-weight: 900;
 }
 h2 {
   font-size: 2.25em;
@@ -30,7 +97,7 @@ h2 {
 }
 h3 {
   font-size: 1.75em;
-  font-weight: 500;
+  font-weight: 700;
 }
 h4 {
   font-size: 1.35em;
@@ -49,9 +116,16 @@ img {
 }
 img.logo {
   width: auto;
+  max-width: 150px
 }
 img.icon {
   width: auto;
+  max-width: 24px
+}
+
+/*figma prototype*/
+iframe {
+  min-height: 700px;
 }
 
 /*links*/
@@ -64,6 +138,13 @@ a:hover, a:focus {
   text-decoration: none;
 }
 
+/*rows/columns*/
+#work .row {
+  margin: 10px 0px;
+  padding-bottom: 25px;
+  border-bottom: 2px solid lightgrey;
+}
+
 /*buttons*/
 .button {
   display: inline-block;
@@ -71,6 +152,7 @@ a:hover, a:focus {
   color: #ffffff;
   font-weight: 400;
   padding: 10px;
+  margin: 10px 0px;
   border-radius: 3px;
   border-bottom: 2px solid #994c30;
   transition: 0.2s opacity;
