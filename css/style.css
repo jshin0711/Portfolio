@@ -138,29 +138,58 @@ iframe {
 }
 
 /*animations*/
-.sun {
-  animation: 4s color-change infinite alternate linear;
+.lightBulb {
+  animation-name: light-up;
+  animation-duration: .4s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: 6;
+  animation-direction: alternate;
 }
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
+
+.cog {
+  animation: rotate .9s linear 2.5s 3;
 }
-.cloud-back {
-  animation: 40s cloud-move-reverse infinite alternate linear;
+
+.oneDot {
+  animation: dot-dot-dot .4s linear 5.5s 1;
+}
+.twoDot {
+  animation: dot-dot-dot .4s linear 6s 1;
+}
+.threeDot {
+  animation: dot-dot-dot .4s linear 6.5s 1;
+}
+
+.rightHand {
+  animation: shake .5s ease 7s 2;
+}
+
+.arrow {
+  animation: appear 1s ease-in 8.5s 1;
 }
 
 /*keyframes*/
-@keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
+@keyframes light-up {
+  0% {fill: auto}
+  100% {fill: #fff;}
 }
-@keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+@keyframes rotate {
+  from {transform: rotate(0);}
+  to {transform: rotate(360deg);}
+  transform-origin: center;
 }
-@keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+@keyframes dot-dot-dot {
+  from {fill: #263238;}
+  to {fill: #01949A;}
+}
+@keyframes shake {
+  from {transform: translate(0, 0);}
+  to {transform: translate(-3px, +5px);}
+}
+@keyframes appear {
+  from {opacity: 0%;}
+  to {opacity: 100%;}
 }
 
 /*links*/
