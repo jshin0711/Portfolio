@@ -126,10 +126,41 @@ img.icon {
   width: auto;
   max-width: 24px
 }
+svg {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
 
 /*figma prototype*/
 iframe {
   min-height: 700px;
+}
+
+/*animations*/
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+.cloud-back {
+  animation: 40s cloud-move-reverse infinite alternate linear;
+}
+
+/*keyframes*/
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
 }
 
 /*links*/
@@ -164,11 +195,13 @@ a:hover, a:focus {
   padding: 10px;
   margin: 10px 0px;
   border-radius: 3px;
-  border-bottom: 2px solid #994c30;
-  transition: 0.2s opacity;
+  border-bottom: 2px solid #01949A;
+  transition: 0.2s background-color;
 }
 .button:hover, .button:focus {
+  opacity: 0.8;
   background-color: #01949A;
+  border-bottom: 2px solid #004369;
   color: #ffffff;
 }
 
