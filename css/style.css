@@ -31,7 +31,7 @@ header {
 
 /*body*/
 body {
-  background-color: #fff;
+  background-color: #ffffff;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 300;
@@ -49,7 +49,7 @@ nav > ul {
   padding: 0;
 }
 nav > ul > li {
-  display: inline-block
+  display: inline-block;
 }
 nav > ul > li > a {
   padding: 0 10px;
@@ -69,38 +69,39 @@ nav > ul > li > a:hover, a:focus {
   font-weight: 500;
   text-decoration: underline;
 }
-
-/*hero*/
-#hero {
-  background-color: #E5DDC8;
-  padding: 10px 0;
-  display: inline-block;
-  width: 100%
+#caseStudy nav {
+  display: block;
 }
 
 /*headings*/
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
-#hero h1 {
+h1 {
   font-size: 2em;
-  font-weight: 700;
+  font-weight: 900;
   text-align: center;
 }
-h1 {
-  font-size: 2.25em;
-  font-weight: 900;
-}
-h2 {
-  font-size: 2.25em;
-  font-weight: 700;
-}
-h3 {
+#hero h1 {
   font-size: 1.75em;
   font-weight: 700;
 }
+h2 {
+  font-size: 2em;
+  font-weight: 700;
+}
+.row h2 {
+  margin-top: 0;
+}
+h3 {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+#about h3 {
+  margin-top: 0;
+}
 h4 {
-  font-size: 1.35em;
+  font-size: 1.15em;
   font-weight: 500;
 }
 
@@ -140,10 +141,16 @@ a:hover, a:focus {
 
 /*rows/columns*/
 #work .row {
-  margin: 10px 0px;
-  padding-bottom: 25px;
+  margin: 10px 0;
+  padding: 25px 0;
   border-bottom: 2px solid lightgrey;
 }
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 
 /*buttons*/
 .button {
@@ -160,4 +167,68 @@ a:hover, a:focus {
 .button:hover, .button:focus {
   background-color: #01949A;
   color: #ffffff;
+}
+
+/*hero*/
+#hero {
+  background-color: #E5DDC8;
+  padding: 20px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+#hero span {
+  display: block;
+}
+
+/*medium devices*/
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 13px 0;
+  }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 16px;
+  }
+  body {
+    padding-top: 99px
+  }
+  .container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+}
+
+/*large devices*/
+@media only screen and (min-width: 1024px) {
+  .col-lg-7 {
+    width: 58.33%;
+  }
+  .col-lg-5 {
+    width: 41.66%;
+  }
+}
+
+/*x-large devices*/
+@media only screen and (min-width: 1440px) {
+  .col-xl-7 {
+    width: 58.33%;
+  }
+  .col-xl-5 {
+    width: 41.66%;
+  }
+  .col-xl-12 {
+    width: 100%;
+  }
+}
+
+[class*="col-"] {
+  float: left;
+  padding-left: 10px;
 }
