@@ -20,22 +20,25 @@
 </head>
 
 <!--Header-->
-  <header>
-    <div class="container">
-      <a href="index.html">
-        <img src="img/logo.svg" alt="Jae Shin" class=logo>
-      </a>
+<header>
+  <div class="container">
+  <div class="navtoggle" id="myNavtoggle">
+    <a href="index.html">
+      <img src="img/logo.svg" alt="Jae Shin: UX Designer" class=logo>
+    </a>
 
-      <nav>
-        <ul>
-          <li><a href="work.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="files/resume.pdf" target="_blank">Resume</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <nav>
+      <ul>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="files/resume.pdf" target="_blank">Resume</a></li>
+        <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+        <li><a href="javascript:void(0);" class="icon" onClick="menuToggle()"><i class="fa-solid fa-bars"></i></a></li>
+      </ul>
+    </nav>
+  </div>
+  </div>
+</header>
 
 <body id="about">
 <!--About-->

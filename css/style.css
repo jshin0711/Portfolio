@@ -20,9 +20,7 @@ Red: #DB1F48
 /*header*/
 header {
   background-color: #E5DDC8;
-  text-align: center;
   position: fixed;
-  padding: 5px 0 0 0;
   -webkit-box-shadow: 0px 10px 10px 0px rgba(50, 50, 50, 0.75);
   -moz-box-shadow:    0px 10px 10px 0px rgba(50, 50, 50, 0.75);
   box-shadow:         0px 10px 10px 0px rgba(50, 50, 50, 0.75);
@@ -38,20 +36,36 @@ body {
   font-weight: 300;
   line-height: 1.6;
   color: #004369;
-  padding-top: 140px;
+  padding-top: 80px;
 }
 
 /*nav (header & footer)*/
-nav {
-  display: inline-block;
-  width: 100%;
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 5px 0;
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 14px;
+  font-size: 20px;
 }
 nav > ul {
   list-style-type:none;
   padding: 0;
-}
-nav > ul > li {
-  display: inline-block;
+  margin: 0;
 }
 nav > ul > li > a {
   padding: 0 10px;
@@ -247,7 +261,7 @@ a:hover, a:focus {
 }
 
 /*medium devices*/
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 641px) {
   header {
     text-align: unset;
     padding: 13px 0;
@@ -257,8 +271,20 @@ a:hover, a:focus {
     float: right;
     margin-top: 16px;
   }
+  nav > ul {
+  margin: 1em 0;
+  }
+  nav > ul > li {
+    display: inline-block;
+  }
+  .navtoggle li:not(:last-child) {
+  display: inline-block;
+  }
+  .navtoggle li:last-child {
+    display: none;
+  }
   body {
-    padding-top: 100px
+    padding-top: 120px
   }
   .container {
   max-width: 1200px;
