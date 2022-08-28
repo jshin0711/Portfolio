@@ -9,6 +9,12 @@ function menuToggle() {
   }
 }
 
+$(document).ready(function(){
+  $(".hamburger").click(function(){
+    $(this).toggleClass("is-active");
+  });
+});
+
 // Smooth Scrolling
 // Select all links with hashes
 $('a[href*="#"]')
