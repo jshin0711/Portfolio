@@ -89,7 +89,7 @@ nav > ul > li > a:hover, a:focus {
 /*nav (case study)*/
 #caseStudyNav {
   text-align: center;
-  padding: 5 0;
+  padding: 5 0
   margin: 5 0;
   border-top: 2px solid #01949A;
   border-bottom: 2px solid #01949A;
@@ -129,7 +129,7 @@ h4 {
   font-weight: 500;
 }
 
-/*emphsis*/
+/*emphasis*/
 em {
   font-style: normal;
   font-weight: 500;
