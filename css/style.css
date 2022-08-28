@@ -85,8 +85,15 @@ nav > ul > li > a:hover, a:focus {
   font-weight: 500;
   text-decoration: underline;
 }
-#caseStudy nav {
-  display: block;
+
+/*nav (case study)*/
+#caseStudyNav {
+  text-align: center;
+  padding: 5 0;
+  margin: 5 0;
+  border-top: 2px solid #01949A;
+  border-bottom: 2px solid #01949A;
+  width: 100%
 }
 
 /*headings*/
