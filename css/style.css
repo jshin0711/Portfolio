@@ -152,6 +152,9 @@ svg {
   max-width: 100%;
   height: auto;
 }
+.animation {
+  width: 100%;
+}
 
 /*figma prototype*/
 iframe {

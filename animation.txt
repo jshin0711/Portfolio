@@ -1,0 +1,1 @@
+animation: fadeinphoto 7s 20s infinite;
