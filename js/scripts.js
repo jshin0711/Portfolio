@@ -1,6 +1,6 @@
 
 // Top nav hamburger menu
-function menuToggle() {
+function hamburger() {
   var x = document.getElementById('myNavtoggle');
   if (x.className === 'navtoggle') {
     x.className += ' responsive';
