@@ -39,7 +39,7 @@ body {
   padding-top: 100px;
 }
 
-/*nav (header & footer)*/
+/*nav*/
 .navtoggle li:not(:last-child) {
   display: none;
 }
@@ -96,18 +96,15 @@ nav > ul > li > a:hover, a:focus {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-
 .hamburger.is-active .line:nth-child(1){
   -webkit-transform: translateY(8px) rotate(45deg);
   -ms-transform: translateY(8px) rotate(45deg);
   -o-transform: translateY(8px) rotate(45deg);
   transform: translateY(8px) rotate(45deg);
 }
-
 .hamburger.is-active .line:nth-child(2){
   opacity: 0;
 }
-
 .hamburger.is-active .line:nth-child(3){
   -webkit-transform: translateY(-8px) rotate(-45deg);
   -ms-transform: translateY(-8px) rotate(-45deg);
@@ -115,7 +112,6 @@ nav > ul > li > a:hover, a:focus {
   transform: translateY(-8px) rotate(-45deg);
 }
 
-/*nav (case study)*/
 #caseStudyNav {
   text-align: center;
   padding: 10px 0px;
@@ -188,23 +184,6 @@ svg {
 }
 .animation {
   width: 100%;
-}
-
-/*Return to top button*/
-#backToTop {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  border: none;
-  box-shadow: 3px 3px 5px lightgrey;
-  padding: 10px;
-  border-radius: 10px;
-}
-
-#backToTop:hover {
-  background-color: lightgrey; /* Add a dark-grey background on hover */
 }
 
 /*figma prototype*/
@@ -308,6 +287,18 @@ a:hover, a:focus {
   border-bottom: 2px solid #004369;
   color: #ffffff;
 }
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  box-shadow: 3px 3px 5px lightgrey;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+}
 
 /*hero*/
 #hero {
@@ -327,7 +318,7 @@ a:hover, a:focus {
     text-align: unset;
     padding: 13px 0;
   }
-  nav {
+  nav:not(.contact) {
     width: auto;
     float: right;
     margin-top: 16px;
@@ -354,6 +345,21 @@ a:hover, a:focus {
   }
   .col-md-6 {
     width: 50%;
+  }
+  #backToTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    box-shadow: 3px 3px 5px lightgrey;
+    padding: 15px;
+    border-radius: 15px;
+  }
+
+  #backToTop:hover {
+    background-color: lightgrey; /* Add a dark-grey background on hover */
   }
 }
 
