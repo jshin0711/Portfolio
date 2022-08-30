@@ -164,6 +164,11 @@ em {
   font-weight: 500;
 }
 
+/*caption*/
+.caption {
+  text-align: center;
+}
+
 /*images*/
 img {
   width: 100%;
