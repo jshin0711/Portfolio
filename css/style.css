@@ -190,6 +190,23 @@ svg {
   width: 100%;
 }
 
+/*Return to top button*/
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  box-shadow: 3px 3px 5px lightgrey;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#backToTop:hover {
+  background-color: lightgrey; /* Add a dark-grey background on hover */
+}
+
 /*figma prototype*/
 iframe {
   min-height: 700px;
