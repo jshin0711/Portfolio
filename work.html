@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="author" content="Jae Shin">
+  <meta name="description" content="Jae Shin, UX Design, UI Design, designer, portfolio, Chicago, remote, Toronto">
+  <title>Jae Shin's UX Design Portfolio Case Studies</title>
+
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="img/favicon.ico" rel="shortcut icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/d82613f868.js" crossorigin="anonymous"></script>
+</head>
+
+<!--Header-->
+<header>
+  <div class="container">
+  <div class="navtoggle" id="myNavtoggle">
+    <a href="index.html">
+      <img src="img/logo.svg" alt="Jae Shin: UX Designer" class=logo>
+    </a>
+
+    <nav>
+      <ul>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="files/resume.pdf" target="_blank">Resume</a></li>
+        <li><a href="#contact" onclick="menuToggle()" onClick="hamburger()">Contact</a></li>
+        <li><a href="javascript:void(0);" class="icon" onClick="hamburger()">
+          <div class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+        </a></li>
+      </ul>
+    </nav>
+  </div>
+  </div>
+</header>
+
+<body>
+
+<!--Back to Top Button-->
+<button onclick="topFunction()" id="backToTop" title="Back to top">
+  <i class="fa-solid fa-arrow-up">
+  </i>
+</button>
+
+<!--Work-->
+  <div id="work">
+    <div class="container">
+      <div>
+        <h1>My work</h1>
+
+  <!--Project 0-->
+  <div class="row">
+    <div class="column col-md-6 col-lg-7 col-xl-7 animation">
+        <source src="img/animation/collaborate.svg" media="(max-width:767px)">
+          <img src="img/animation/collaborate.svg" alt="illustration of two people shaking hands">
+    </div>
+
+    <div class="column col-md-6 col-lg-5 col-xl-5">
+      <h2>Adding animation using CSS</h2>
+      <p>
+        Use CSS to add animation to an SVG.
+      </p>
+      <a href="animation.html" class="button">See animation</a>
+    </div>
+  </div>
+
+  <!--Project 1-->
+        <div class="row">
+          <div class="column col-md-6 col-lg-7 col-xl-7">
+            <picture>
+              <source src="img/recharge/rechargecover@1x.png" media="(max-width:767px)">
+                <img src="img/recharge/rechargecover@2x.png" alt="Recharge App: Designing a mental health app by Jae Shin">
+            </picture>
+          </div>
+
+          <div class="column col-md-6 col-lg-5 col-xl-5">
+            <h2>Designing Recharge from start to finish</h2>
+            <p>
+              Recharge is a mental health app I designed from beginning to end (user research to high-fidelity prototype with multiple rounds of iterations). It is a mobile-first responsive web app made for CareerFoundry’s UX Design course.
+            </p>
+            <a href="recharge.html" class="button">Read More</a>
+          </div>
+        </div>
+
+  <!--Project 2-->
+        <div class="row">
+          <div class="column col-md-6 col-lg-7 col-xl-7">
+            <picture>
+              <source src="img/studybuddy/studybuddycover@1x.png" media="(max-width:767px)">
+                <img src="img/studybuddy/studybuddycover@2x.png" alt="StudyBuddy App: Learning the Design Thinking process by Jae Shin">
+            </picture>
+          </div>
+
+          <div class="column col-md-6 col-lg-5 col-xl-5">
+            <h2>Project-based learning through StudyBuddy</h2>
+            <p>
+              StudyBuddy is a vocabulary learning mobile app. I learned the ins and outs of the Design Thinking process through this project-based learning as a part of CareerFoundry’s UX Design course.
+            </p>
+            <a href="studybuddy.html" class="button">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--JQuery & JavaScript-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+
+</body>
+
+<!--Footer-->
+<footer id="contact">
+  <div class="container">
+    <div>
+      <h1>Get in touch</h1>
+      <p>
+        If you like what you see and want to work with me or have any questions, please get in touch!
+      </p>
+      <a href="mailto:jshin0711@gmail.com">Contact me</a>
+    </div>
+
+  <!--Socials-->
+    <nav>
+      <ul>
+        <li>
+          <a href="mailto:jshin0711@gmail.com" class="icon" target="_blank">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://linkedin.com/in/jae-shin" class="icon" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+      <p>Copyright &copy; Jae Shin 2022</p>
+  </div>
+
+</footer>
+</html>
