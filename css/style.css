@@ -67,6 +67,14 @@ nav > ul {
   padding: 0;
   margin: 0;
 }
+nav.contact > ul > li {
+  display: inline-block;
+  font-size: 25px;
+  padding: 5px 0px;
+}
+nav.contact > ul {
+  text-align: center;
+}
 nav > ul > li > a {
   padding: 0 10px;
   text-transform: uppercase;
@@ -268,7 +276,6 @@ a:hover, a:focus {
   display: table;
 }
 
-
 /*buttons*/
 .button {
   display: inline-block;
@@ -324,16 +331,20 @@ a:hover, a:focus {
     margin-top: 16px;
   }
   nav > ul {
-  margin: 1em 0;
+    margin: 1em 0;
   }
   nav > ul > li {
     display: inline-block;
   }
   .navtoggle li:not(:last-child) {
-  display: inline-block;
+    display: inline-block;
   }
   .navtoggle li:last-child {
     display: none;
+  }
+  li .icon {
+    position: relative;
+    font-size: 30px;
   }
   body {
     padding-top: 120px
