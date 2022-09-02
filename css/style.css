@@ -357,6 +357,10 @@ a:hover, a:focus {
   .col-md-6 {
     width: 50%;
   }
+  #resumeButton {
+    display: none;
+  }
+
   #backToTop {
     display: none;
     position: fixed;
