@@ -39,7 +39,7 @@ body {
   padding-top: 100px;
 }
 
-/*nav*/
+/*top navigation bar*/
 .navtoggle li:not(:last-child) {
   display: none;
 }
@@ -67,20 +67,11 @@ nav > ul {
   padding: 0;
   margin: 0;
 }
-nav.contact > ul > li {
-  display: inline-block;
-  font-size: 25px;
-  padding: 5px 0px;
-}
-nav.contact > ul {
-  text-align: center;
-}
-nav > ul > li > a {
+nav > ul > li > a.item {
   padding: 0 10px;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 700;
-  color: #4a4a4a;
 }
 nav > ul > li > a:visited {
   color: #004369;
@@ -118,6 +109,22 @@ nav > ul > li > a:hover, a:focus {
   -ms-transform: translateY(-8px) rotate(-45deg);
   -o-transform: translateY(-8px) rotate(-45deg);
   transform: translateY(-8px) rotate(-45deg);
+}
+
+/*contact*/
+nav.contact > ul > li {
+  display: inline-block;
+  font-size: 25px;
+  padding: 5px 10px;
+}
+nav > ul > li > a.email {
+  color: #004369;
+}
+nav > ul > li > a.email:hover, a.email:focus {
+  color: #01949A;
+}
+nav.contact > ul {
+  text-align: center;
 }
 
 #caseStudyNav {
