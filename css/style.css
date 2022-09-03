@@ -201,6 +201,11 @@ svg {
   width: 100%;
 }
 
+/*lists*/
+ul.noStyleType {
+  list-style-type: none;
+}
+
 /*figma prototype*/
 iframe {
   min-height: 700px;
