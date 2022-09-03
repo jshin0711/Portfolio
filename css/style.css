@@ -11,6 +11,11 @@ Red: #DB1F48
   box-sizing: border-box;
 }
 
+html {
+  scroll-padding-top: 125px;
+  scroll-behavior: smooth;
+}
+
 /*layout styling*/
 .container {
   padding: 15px;
