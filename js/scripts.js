@@ -14,16 +14,8 @@ $(document).ready(function(){
   });
 });
 
-/*
-// Animation replay button
-replaybutton = document.getElementById("replay")
-replaybutton.onclick = function(){location.reload();};
-*/
-
-//SmoothScroll
-      if (
-  // Return to top button
-  mybutton = document.getElementById("backToTop");
+// Return to top button
+mybutton = document.getElementById("backToTop");
 
     // When the user scrolls down 100px from the top of the document, show the button
     window.onscroll = function() {scrollFunction()};
@@ -41,3 +33,8 @@ replaybutton.onclick = function(){location.reload();};
       document.body.scrollTop = 0; // For Safari
       document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }
+
+//Replay animation
+function refreshPage(){
+    window.location.reload();
+} 

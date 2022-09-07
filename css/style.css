@@ -226,7 +226,7 @@ iframe {
   animation-name: light-up;
   animation-duration: .7s;
   animation-timing-function: linear;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 4;
   animation-direction: alternate;
 }
 /*
@@ -235,21 +235,21 @@ iframe {
 }
 */
 .oneDot {
-  animation: dot-dot-dot 1.2s linear 2.5s infinite;
+  animation: dot-dot-dot 1.2s linear 2.5s 1;
 }
 .twoDot {
-  animation: dot-dot-dot 1.2s linear 3s infinite;
+  animation: dot-dot-dot 1.2s linear 3s 1;
 }
 .threeDot {
-  animation: dot-dot-dot 1.2s linear 3.5s infinite;
+  animation: dot-dot-dot 1.2s linear 3.5s 1;
 }
 
 .rightHand {
-  animation: shake .9s ease 5s infinite;
+  animation: shake .9s ease 5s 3;
 }
 
 .arrow {
-  animation: appear 1.9s ease-in 6.5s infinite;
+  animation: appear 1.9s ease-in 6.5s 1;
 }
 
 /*keyframes*/
