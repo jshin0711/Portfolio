@@ -21,6 +21,11 @@ html {
   padding: 15px;
   max-width: 1200px;
 }
+.topBorder {
+  margin: 10px 0;
+  padding: 25px 0;
+  border-top: 2px solid lightgrey;
+}
 
 /*header*/
 header {
@@ -219,33 +224,32 @@ iframe {
 /*animations*/
 .lightBulb {
   animation-name: light-up;
-  animation-duration: .4s;
+  animation-duration: .7s;
   animation-timing-function: linear;
-  animation-delay: 0s;
-  animation-iteration-count: 6;
+  animation-iteration-count: infinite;
   animation-direction: alternate;
 }
-
+/*
 .cog {
-  animation: rotate .9s linear 2.5s 3;
+  animation: rotate 1.3s linear 2.5s infinite;
 }
-
+*/
 .oneDot {
-  animation: dot-dot-dot .4s linear 5.5s 1;
+  animation: dot-dot-dot 1.2s linear 2.5s infinite;
 }
 .twoDot {
-  animation: dot-dot-dot .4s linear 6s 1;
+  animation: dot-dot-dot 1.2s linear 3s infinite;
 }
 .threeDot {
-  animation: dot-dot-dot .4s linear 6.5s 1;
+  animation: dot-dot-dot 1.2s linear 3.5s infinite;
 }
 
 .rightHand {
-  animation: shake .5s ease 7s 2;
+  animation: shake .9s ease 5s infinite;
 }
 
 .arrow {
-  animation: appear 1s ease-in 8.5s 1;
+  animation: appear 1.9s ease-in 6.5s infinite;
 }
 
 /*keyframes*/
