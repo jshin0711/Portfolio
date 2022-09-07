@@ -79,6 +79,7 @@ nav > ul > li > a.item {
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 700;
+  color: #004369;
 }
 nav > ul > li > a:visited {
   color: #004369;
@@ -160,6 +161,7 @@ h1 {
 h2 {
   font-size: 1.75em;
   font-weight: 700;
+  text-align: center;
 }
 .row h2 {
   margin-top: 0;
@@ -175,6 +177,13 @@ h4 {
   font-size: 1.15em;
   font-weight: 500;
 }
+hr {
+  border-top: 1px dotted lightgrey;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 /*emphasis*/
 em {
