@@ -373,6 +373,7 @@ a:hover, a:focus {
   }
   .col-md-6 {
     width: 50%;
+    padding: 12px;
   }
   #resumeButton {
     display: none;
