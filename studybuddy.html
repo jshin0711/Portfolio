@@ -47,7 +47,6 @@
 </header>
 
 <body id="caseStudy">
-
   <!--Back to Top Button-->
   <button onclick="topFunction()" id="backToTop" title="Back to top">
     <i class="fa-solid fa-arrow-up">
@@ -58,7 +57,7 @@
   <div class="container">
     <div>
       <picture>
-        <source src="img/studybuddy/studybuddycover@1x.png" media="(max-width:767px)">
+        <source srcset="img/studybuddy/studybuddycover@1x.png" media="(max-width:767px)">
         <img src="img/studybuddy/studybuddycover@2x.png" alt="StudyBuddy App: Learning the Design Thinking process by Jae Shin">
       </picture>
     </div>
@@ -211,173 +210,180 @@
         As a first time user researcher, I was grateful to be able to recruit friends to interview for this project. However, while reviewing the interview recordings, I noticed many ways I can improve as a researcher such as staying impartial,
         embracing silences to encourage interviewees to elaborate and asking relevant follow up questions to gather deeper insights.
       </p>
-
-      <div id="userPersonas">
-        <h1>POV</h1>
-        <h2>User Personas</h2>
-        <p>
-          Now that I had a better understanding of real people who may use my vocabulary app, I created User Personas based on the interview analysis and summary.
-        </p>
-
-        <picture>
-          <source src="img/studybuddy/persona@1x.jpg" media="(max-width:767px)">
-          <img src="img/studybuddy/persona@2x.jpg" alt="Smiling ethnically ambiguous woman with curly hair">
-        </picture>
-        <caption>
-          “I was a great student in undergrad but am finding it much harder to dedicate time to studying and staying motivated with everything else going on in my life.”
-        </caption>
-
-        <h2>Jenna Flores</h2>
-
-        <ul class="noStyleType">
-          <li><em>Age</em>: 27</li>
-          <li><em>Family status</em>: Single, no kids</li>
-          <li><em>Work</em>: Talent Recruiter (Full-time)</li>
-          <li><em>Education</em>: Bachelor’s in Psychology, pursuing a Master’s in Nursing</li>
-        </ul>
-
-        <h2>Behaviors</h2>
-        <ul>
-          <li>Commutes to and from work on public transportation (about 45 minutes)</li>
-          <li>Connects with friends and family via social media on cell phone throughout the day</li>
-          <li>Studies at a desk in home office setting in the evenings after work</li>
-          <li>Makes flashcards to study vocabulary</li>
-        </ul>
-
-        <h2>Needs & Goals</h2>
-        <ul>
-          <li>Needs to incorporate real world contexts for new vocabulary to better understand and remember them</li>
-          <li>Wants to connect to classmates to study together and motivate each other</li>
-          <li>Wants to take advantage of smaller chunks of time throughout the day to study</li>
-          <li>Needs features that a physical deck of flashcards offers such as sorting and shuffling </li>
-        </ul>
-
-        <h2>User Stories</h2>
-        <ul>
-          <li>As a full time worker pursuing a master's, I want to be able to specify times for my reminders so that I study more often during my lunch breaks and commute.</li>
-          <li>As a Nursing student, I want to study with my classmates so that we keep each other motivated.</li>
-          <li>As a student, I want to write my own definition of words so that making the flashcards is a part of the studying process.</li>
-          <li>As a full time worker and part-time student, I want a quick way to sort flashcards into different piles so that I save time from reviewing words I already know.</li>
-        </ul>
-
-        <h2>Problem Statement</h2>
-        <p>Jenna needs a way to study in different environments such as a breakroom where she needs to be quiet or a loud train during her commute because she has limited time for studying and needs to take advantage of small chunks of time
-          throughout the day. We will know this to be true when we see that Jenna is studying at various times of the day.</p>
-
-        <h2>Hypothesis Statement</h2>
-        <p>We believe that by providing multiple ways of reviewing vocabulary such as fill in the blank, multiple choice and matching pairs for Jenna, we will be able to accommodate the various environments and time constraints that Jenna has to
-          study in and therefore achieve an increase in speed for learning vocabulary.</p>
-      </div>
-
-      <div id="userFlows">
-        <h1>Ideate</h1>
-        <h2>Task Analyses & User Flows</h2>
-        <p>
-          In the next portion of the Design Thinking Process “Ideate”, I created <em>task analyses</em> and <em>user flows</em> for two important tasks for my user persona Jenna.
-        </p>
-
-        <h2>Setting Study Reminder Notifications</h2>
-        <p><em>Entry point</em>: Open menu</p>
-        <p><em>Success criteria</em>: Personalize reminder notification times</p>
-        <ol>
-          <li>Open app</li>
-          <li>Open menu options</li>
-          <li>Open profile</li>
-          <li>Open profile settings</li>
-          <li>Open reminders</li>
-          <li>Add reminder</li>
-          <li>Specify time</li>
-          <li>Add additional reminder(s) (optional) </li>
-          <li>Save</li>
-        </ol>
-
-        <div>
-          <picture>
-            <source src="img/studybuddy/flow-reminders@1x.jpg" media="(max-width:767px)">
-            <img src="img/studybuddy/flow-reminders@2x.jpg" alt=" ">
-          </picture>
-        </div>
-
-        <caption>Made using Miro</caption>
-
-        <h2>Reviewing Vocabulary Using Multiple Choice</h2>
-        <p><em>Entry point</em>: Select vocabulary words to review</p>
-        <p><em>Success criteria</em>: Review vocabulary using multiple choice feature</p>
-        <ol>
-          <li>Open app</li>
-          <li>Select group of vocabulary words to review (optional - default selects all) </li>
-          <li>Select multiple choice option</li>
-          <li>Review vocabulary</li>
-        </ol>
-
-        <div>
-          <picture>
-            <source src="img/studybuddy/flow-study@1x.jpg" media="(max-width:767px)">
-            <img src="img/studybuddy/flow-study@2x.jpg" alt=" ">
-          </picture>
-        </div>
-
-        <caption>Made using Miro</caption>
-      </div>
-
-      <div id="wireframes">
-        <h1>Prototype</h1>
-        <h2>Wireframes & Prototype</h2>
-        <p>
-          At this point, I started the exciting process of <em>wireframing</em> the main features identified in the task analyses and user flows above. I created low-fidelity wireframes of StudyBuddy with its user persona and user flows in mind.
-        </p>
-        <div>
-          <picture>
-            <source src="img/studybuddy/wireframes@1x.png" media="(max-width:767px)">
-            <img src="img/studybuddy/wireframes@2x.png" alt=" ">
-          </picture>
-        </div>
-
-        <h2>Takeaways</h2>
-        <p>
-          At the very beginning stages of wireframing, I found myself obsessing over details and element proportions. I had to consciously remind myself to embrace the trial and error mindset, knowing future iterations are inevitable. Through this
-          experience, I learned the importance of using pen and paper. With more advanced tools like Figma or Adobe XD, I would not be able to practice rapid prototyping and rather, get stuck in the ideation stage for far too long for a version of
-          the product that might not even hold up to usability testing.
-        </p>
-      </div>
-
-      <div id="usabilityTesting">
-        <h1>Test</h1>
-        <h2>Usability Testing</h2>
-        <p>
-          In the final stage of this project, I conducted <em>usability testing</em> with four key user task scenarios on five participants.
-        </p>
-
-        <div>
-          <picture>
-            <source src="img/studybuddy/testing@1x.jpg" media="(max-width:767px)">
-            <img src="img/studybuddy/testing@2x.jpg" alt=" ">
-          </picture>
-        </div>
-
-        <caption>Made using Miro</caption>
-
-        <h2>New Iteration</h2>
-        <p>
-          These changes were made based on the usability testing results
-        </p>
-        <ul>
-          <li>Linking to social accounts: language updated and process streamlined</li>
-          <li>Onboarding: added “Skip all” option (if selected, coach mark would show where to access “Help” if needed in the future)</li>
-        </ul>
-
-        <h2>Takeaways</h2>
-        <p>
-          <em>Recording usability testing sessions</em> During usability testing sessions, most participants seemed to navigate the prototype with ease, completing each task efficiently. However, upon review of the recordings, I found many instances
-          in which participants quickly clicked through wrong pages before landing on the correct one. I would have missed these instances if not for the recordings, helping me realize the importance of recordings to review or better yet, having a
-          second user researcher for future sessions.
-        </p>
-        <p>
-          <em>Making research backed decisions</em> While the major decisions and updates on the StudyBuddy app were based on user research, I made some smaller changes throughout iterations. While I know it's okay to make changes based on instinct,
-          I realized that if working on a team, it wouldn't hurt to make changes based on user.
-        </p>
-      </div>
     </div>
+
+    <div id="userPersonas">
+      <h1>POV</h1>
+      <h2>User Personas</h2>
+      <p>
+        Now that I had a better understanding of real people who may use my vocabulary app, I created User Personas based on the interview analysis and summary.
+      </p>
+
+      <picture>
+        <source srcset="img/studybuddy/persona@1x.jpg" media="(max-width:767px)">
+        <img src="img/studybuddy/persona@2x.jpg" alt="Smiling ethnically ambiguous woman with curly hair">
+      </picture>
+      <p class="caption">
+        “I was a great student in undergrad but am finding it much harder to dedicate time to studying and staying motivated with everything else going on in my life.”
+      </p>
+
+      <h2>Jenna Flores</h2>
+
+      <ul class="noStyleType">
+        <li><em>Age</em>: 27</li>
+        <li><em>Family status</em>: Single, no kids</li>
+        <li><em>Work</em>: Talent Recruiter (Full-time)</li>
+        <li><em>Education</em>: Bachelor’s in Psychology, pursuing a Master’s in Nursing</li>
+      </ul>
+
+      <h2>Behaviors</h2>
+      <ul>
+        <li>Commutes to and from work on public transportation (about 45 minutes)</li>
+        <li>Connects with friends and family via social media on cell phone throughout the day</li>
+        <li>Studies at a desk in home office setting in the evenings after work</li>
+        <li>Makes flashcards to study vocabulary</li>
+      </ul>
+
+      <h2>Needs & Goals</h2>
+      <ul>
+        <li>Needs to incorporate real world contexts for new vocabulary to better understand and remember them</li>
+        <li>Wants to connect to classmates to study together and motivate each other</li>
+        <li>Wants to take advantage of smaller chunks of time throughout the day to study</li>
+        <li>Needs features that a physical deck of flashcards offers such as sorting and shuffling </li>
+      </ul>
+
+      <h2>User Stories</h2>
+      <ul>
+        <li>As a full time worker pursuing a master's, I want to be able to specify times for my reminders so that I study more often during my lunch breaks and commute.</li>
+        <li>As a Nursing student, I want to study with my classmates so that we keep each other motivated.</li>
+        <li>As a student, I want to write my own definition of words so that making the flashcards is a part of the studying process.</li>
+        <li>As a full time worker and part-time student, I want a quick way to sort flashcards into different piles so that I save time from reviewing words I already know.</li>
+      </ul>
+
+      <h2>Problem Statement</h2>
+      <p>Jenna needs a way to study in different environments such as a breakroom where she needs to be quiet or a loud train during her commute because she has limited time for studying and needs to take advantage of small chunks of time
+        throughout the day. We will know this to be true when we see that Jenna is studying at various times of the day.</p>
+
+      <h2>Hypothesis Statement</h2>
+      <p>We believe that by providing multiple ways of reviewing vocabulary such as fill in the blank, multiple choice and matching pairs for Jenna, we will be able to accommodate the various environments and time constraints that Jenna has to
+        study in and therefore achieve an increase in speed for learning vocabulary.</p>
+    </div>
+
+    <div id="userFlows">
+      <h1>Ideate</h1>
+      <h2>Task Analyses & User Flows</h2>
+      <p>
+        In the next portion of the Design Thinking Process “Ideate”, I created <em>task analyses</em> and <em>user flows</em> for two important tasks for my user persona Jenna.
+      </p>
+
+      <h2>Setting Study Reminder Notifications</h2>
+      <p><em>Entry point</em>: Open menu</p>
+      <p><em>Success criteria</em>: Personalize reminder notification times</p>
+      <ol>
+        <li>Open app</li>
+        <li>Open menu options</li>
+        <li>Open profile</li>
+        <li>Open profile settings</li>
+        <li>Open reminders</li>
+        <li>Add reminder</li>
+        <li>Specify time</li>
+        <li>Add additional reminder(s) (optional) </li>
+        <li>Save</li>
+      </ol>
+
+      <div>
+        <picture>
+          <source srcset="img/studybuddy/flow-reminders@1x.jpg" media="(max-width:767px)">
+          <img src="img/studybuddy/flow-reminders@2x.jpg" alt=" ">
+        </picture>
+      </div>
+
+      <p class="caption">
+        Made using Miro
+      </p>
+
+      <h2>Reviewing Vocabulary Using Multiple Choice</h2>
+      <p><em>Entry point</em>: Select vocabulary words to review</p>
+      <p><em>Success criteria</em>: Review vocabulary using multiple choice feature</p>
+      <ol>
+        <li>Open app</li>
+        <li>Select group of vocabulary words to review (optional - default selects all) </li>
+        <li>Select multiple choice option</li>
+        <li>Review vocabulary</li>
+      </ol>
+
+      <div>
+        <picture>
+          <source srcset="img/studybuddy/flow-study@1x.jpg" media="(max-width:767px)">
+          <img src="img/studybuddy/flow-study@2x.jpg" alt=" ">
+        </picture>
+      </div>
+
+      <p class="caption">
+        Made using Miro
+      </p>
+    </div>
+
+    <div id="wireframes">
+      <h1>Prototype</h1>
+      <h2>Wireframes & Prototype</h2>
+      <p>
+        At this point, I started the exciting process of <em>wireframing</em> the main features identified in the task analyses and user flows above. I created low-fidelity wireframes of StudyBuddy with its user persona and user flows in mind.
+      </p>
+      <div>
+        <picture>
+          <source srcset="img/studybuddy/wireframes@1x.png" media="(max-width:767px)">
+          <img src="img/studybuddy/wireframes@2x.png" alt=" ">
+        </picture>
+      </div>
+
+      <h2>Takeaways</h2>
+      <p>
+        At the very beginning stages of wireframing, I found myself obsessing over details and element proportions. I had to consciously remind myself to embrace the trial and error mindset, knowing future iterations are inevitable. Through this
+        experience, I learned the importance of using pen and paper. With more advanced tools like Figma or Adobe XD, I would not be able to practice rapid prototyping and rather, get stuck in the ideation stage for far too long for a version of
+        the product that might not even hold up to usability testing.
+      </p>
+    </div>
+
+    <div id="usabilityTesting">
+      <h1>Test</h1>
+      <h2>Usability Testing</h2>
+      <p>
+        In the final stage of this project, I conducted <em>usability testing</em> with four key user task scenarios on five participants.
+      </p>
+
+      <div>
+        <picture>
+          <source srcset="img/studybuddy/testing@1x.jpg" media="(max-width:767px)">
+          <img src="img/studybuddy/testing@2x.jpg" alt=" ">
+        </picture>
+      </div>
+
+      <p class="caption">
+        Made using Miro
+      </p>
+
+      <h2>New Iteration</h2>
+      <p>
+        These changes were made based on the usability testing results
+      </p>
+      <ul>
+        <li>Linking to social accounts: language updated and process streamlined</li>
+        <li>Onboarding: added “Skip all” option (if selected, coach mark would show where to access “Help” if needed in the future)</li>
+      </ul>
+
+      <h2>Takeaways</h2>
+      <p>
+        <em>Recording usability testing sessions</em> During usability testing sessions, most participants seemed to navigate the prototype with ease, completing each task efficiently. However, upon review of the recordings, I found many instances
+        in which participants quickly clicked through wrong pages before landing on the correct one. I would have missed these instances if not for the recordings, helping me realize the importance of recordings to review or better yet, having a
+        second user researcher for future sessions.
+      </p>
+      <p>
+        <em>Making research backed decisions</em> While the major decisions and updates on the StudyBuddy app were based on user research, I made some smaller changes throughout iterations. While I know it's okay to make changes based on instinct,
+        I realized that if working on a team, it wouldn't hurt to make changes based on user.
+      </p>
+    </div>
+  </div>
 
     <!--JQuery & JavaScript-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

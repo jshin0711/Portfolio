@@ -251,6 +251,7 @@ ul.noStyleType {
 /*figma prototype*/
 iframe {
   min-height: 700px;
+  border: 0;
 }
 
 /*animations*/
