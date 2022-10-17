@@ -1,9 +1,10 @@
 /*
 Colors used:
 Off-white: #e5ddc8
-Blue: #01949a
+Blue: #216C6F
 Dark blue: #004369
 Red: #DB1F48
+Original blue: #01949a
 */
 
 /* border box */
@@ -100,7 +101,7 @@ nav > ul > li > a:active {
 
 nav > ul > li > a:hover,
 a:focus {
-  color: #01949a;
+  color: #216C6F;
   font-weight: 500;
   text-decoration: underline;
 }
@@ -147,14 +148,14 @@ nav > ul > li > a.email {
 
 nav > ul > li > a.email:hover,
 a.email:focus {
-  color: #01949a;
+  color: #216C6F;
 }
 
 #caseStudyNav {
   padding: 10px 0;
   margin: 5px 0;
-  border-top: 2px solid #01949a;
-  border-bottom: 2px solid #01949a;
+  border-top: 2px solid #216C6F;
+  border-bottom: 2px solid #216C6F;
   width: 100%;
 }
 
@@ -322,7 +323,7 @@ iframe {
   }
 
   to {
-    fill: #01949a;
+    fill: #216C6F;
   }
 }
 
@@ -353,7 +354,7 @@ a:active {
 
 a:hover,
 a:focus {
-  color: #01949a;
+  color: #216C6F;
   font-weight: 500;
   text-decoration: none;
 }
@@ -380,14 +381,14 @@ a:focus {
   padding: 10px;
   margin: 10px 0;
   border-radius: 3px;
-  border-bottom: 2px solid #01949a;
+  border-bottom: 2px solid #216C6F;
   transition: 0.2s background-color;
 }
 
 .button:hover,
 .button:focus {
   opacity: 0.8;
-  background-color: #01949a;
+  background-color: #216C6F;
   border-bottom: 2px solid #004369;
   color: #fff;
 }
@@ -446,9 +447,10 @@ a:focus {
     display: none;
   }
 
-  li .icon {
+  .icon {
     position: relative;
     font-size: 30px;
+    color: #004369;
   }
 
   body {
