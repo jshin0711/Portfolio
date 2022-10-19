@@ -1,95 +1,81 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
   <meta name="author" content="Jae Shin">
   <meta name="description" content="Jae Shin, UX Design, UI Design, designer, portfolio, Chicago, remote, Toronto">
   <title>Jae Shin's UX Design Portfolio About Me</title>
-
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="img/favicon.ico" rel="shortcut icon">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
   <script src="https://kit.fontawesome.com/d82613f868.js" crossorigin="anonymous"></script>
 </head>
-
 <!--Header-->
 <header>
   <div class="container">
-    <div class="navtoggle" id="myNavtoggle">
-      <a href="index.html">
-        <img src="img/logo.svg" alt="Jae Shin: UX Designer" class=logo>
-      </a>
-
-      <nav>
-        <ul>
-          <li><a href="about.html" class="item">About</a></li>
-          <li><a href="work.html" class="item">Work</a></li>
-          <li><a href="#contact" class="item">Contact</a></li>
-          <li><a href="javascript:void(0);" onClick="hamburger()">
-              <div class="hamburger icon">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
-              </div>
-            </a></li>
-        </ul>
-      </nav>
-    </div>
+  <div class="navtoggle" id="myNavtoggle">
+    <a href="index.html">
+      <img src="img/logo.svg" alt="Jae Shin: UX Designer" class=logo>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="work.html" class="item">Work</a></li>
+        <li><a href="about.html" class="item">About</a></li>
+        <li><a href="files/resume.pdf" class="item" target="_blank">Resume</a></li>
+        <li><a href="#contact" class="item" onClick="hamburger()">Contact</a></li>
+        <li><a href="javascript:void(0);" onClick="hamburger()">
+          <div class="hamburger icon">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+        </a></li>
+      </ul>
+    </nav>
+  </div>
   </div>
 </header>
-
 <body id="about">
-  <!--Back to Top Button-->
-  <button onclick="topFunction()" id="backToTop" title="Back to top">
-    <i class="fa-solid fa-arrow-up fa-xl">
-    </i>
-  </button>
-
-  <!--About-->
+<!--Back to Top Button-->
+<button onclick="topFunction()" id="backToTop" title="Back to top">
+  <i class="fa-solid fa-arrow-up">
+  </i>
+</button>
+<!--About-->
   <div class="container">
     <div>
       <div>
-        <h1 class="center">About me</h1>
+        <h1>About me</h1>
       </div>
     </div>
-
     <div>
       <div>
-        <div class="center">
-          <picture>
-            <source srcset="img/profile@1x.jpg" media="(max-width:767px)">
-            <img src="img/profile@2x.jpg" class="portrait" alt="portrait of an asian woman in traditional Korean wear">
-          </picture>
-        </div>
-
+        <picture>
+          <source src="img/profile@1x.jpg" media="(max-width:767px)">
+          <img src="img/profile@2x.jpg" alt="portrait of an asian woman in traditional Korean wear">
+        </picture>
         <div class="row">
-          <div class="col-xl-7">
+          <div class= "col-xl-7">
             <h2>My entry into User Experience</h2>
             <p>
-              One day as I listened to a podcast, one of the hosts mentioned her career in User Experience. I had never heard this term and my interest was piqued from the things she mentioned about her job. As soon as I began researching User
-              Experience, I knew this was it.
+              One day as I listened to a podcast, one of the hosts mentioned her career in User Experience. I had never heard this term and my interest was piqued from the things she mentioned about her job. As soon as I began researching User Experience, I knew this was it.
             </p>
             <p>
               Some of the elements of being a User Experience Designer that draws me the most include...
-            </p>
               <ul>
                 <li>Using both creative and analytic skills</li>
                 <li>Working with and for people</li>
                 <li>Exploring new ideas, creative solutions</li>
                 <li>Always looking to make improvements</li>
               </ul>
-            <p>
-              After attempting some self-study routes and self-led projects, I landed on CareerFoundry's User Experience Immersive Course. CareerFoundry's UX course helped build and practice my UX skillset through project-based learning (see <a
-                href="recharge.html">Recharge</a>).
             </p>
-
+            <p>
+              After attempting some self-study routes and self-led projects, I landed on CareerFoundry's User Experience Immersive Course. CareerFoundry's UX course helped build and practice my UX skillset through project-based learning (see <a href="recharge.html">Recharge</a>).
+            </p>
             <h2>Essential traits I'm bringing</h2>
             <ul>
               <li><em>Adaptable</em> - I love change and newness. I’m flexible and quick to adapt to new situations.</li>
@@ -97,7 +83,6 @@
               <li><em>Collaborative</em> - As an extrovert, I love working and getting along with others.</li>
               <li><em>Emotionally intelligent</em> - I am intuitive with others’ emotions and pride myself in being able to respond calmly in stressful situations</li>
             </ul>
-
             <h2>What I'm like outside of work</h2>
             <ul>
               <li>Avid podcast listener - open to UX-related podcast recs!</li>
@@ -107,10 +92,8 @@
               <li>An aspiring (and mostly failing) minimalist</li>
               <li>Self-proclaimed group fitness junkie</li>
             </ul>
-
           </div>
-
-          <div class="col-lg-12 col-xl-5">
+          <div class= "col-lg-12 col-xl-5">
             <h2>Skills & Tools</h2>
             <div class="col-md-6 col-lg-6 col-xl-12">
               <h3>Relevant skills</h3>
@@ -125,7 +108,6 @@
                 <li>UX writing</li>
               </ul>
             </div>
-
             <div class="col-md-6 col-lg-6 col-xl-12">
               <h3>Tools I use</h3>
               <ul>
@@ -141,31 +123,27 @@
             </div>
           </div>
         </div>
-
         <a href="files/resume.pdf" target="_blank" class="button" id="resumeButton">See Resume</a>
-
       </div>
     </div>
   </div>
-
   <!--JQuery & JavaScript-->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="js/index.js"></script>
-
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
 </body>
 
 <!--Footer-->
 <footer id="contact">
-  <div class="container center">
-    <div>
+  <div class="container">
+    <div class="topBorder">
       <h1>Get in touch</h1>
       <span>
-        Get in touch to get to know me better or to work with me!
+        If you like what you see and want to work with me or have any questions, please get in touch!
       </span>
       <a href="mailto:jshin0711@gmail.com">Contact me</a>
     </div>
-
-    <!--Socials-->
+  <!--Socials-->
     <nav class="contact">
       <ul>
         <li>
@@ -180,9 +158,7 @@
         </li>
       </ul>
     </nav>
-
     <p>Copyright &copy; Jae Shin 2022</p>
   </div>
 </footer>
-
 </html>
