@@ -213,6 +213,9 @@ em {
   font-style: normal;
   font-weight: 500;
 }
+.highlight {
+  background: linear-gradient(#fff 65%, #ffd15c 50%);
+}
 
 /* caption */
 .caption {
