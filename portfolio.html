@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="author" content="Jae Shin">
+  <meta name="description" content="Jae Shin, UX Design, UI Design, designer, portfolio, Chicago, remote, Toronto">
+  <title>Jae Shin's UX Design Portfolio Website Case Study</title>
+
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="img/favicon.ico" rel="shortcut icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/d82613f868.js" crossorigin="anonymous"></script>
+</head>
+
+<!--Header-->
+<header>
+  <div class="container">
+    <div class="navtoggle" id="myNavtoggle">
+      <a href="index.html">
+        <img src="img/logo.svg" alt="Jae Shin: UX Designer" class=logo>
+      </a>
+
+      <nav>
+        <ul>
+          <li><a href="about.html" class="item">About</a></li>
+          <li><a href="work.html" class="item">Work</a></li>
+          <li><a href="#contact" class="item">Contact</a></li>
+          <li><a href="javascript:void(0);" onClick="hamburger()">
+              <div class="hamburger icon">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+              </div>
+            </a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <!--Progress bar-->
+  <div class="progressContainer">
+    <div class="progressBar" id="myBar"></div>
+  </div>
+</header>
+
+<body id="caseStudy">
+  <!--Back to Top Button-->
+  <button onclick="topFunction()" id="backToTop" title="Back to top">
+    <i class="fa-solid fa-arrow-up fa-xl">
+    </i>
+  </button>
+
+  <!--Case Study-->
+  <div class="container">
+    <div>
+      <picture>
+        <source srcset="img/portfolio/portfoliocover@1x.jpg" media="(max-width:767px)">
+        <img src="img/portfolio/portfoliocover@2x.jpg" alt="Portfolio Website: Designing and coding a responsive website by Jae Shin">
+      </picture>
+    </div>
+
+    <div id="introduction">
+      <h1 class="center">Introduction</h1>
+      <ul>
+        <li><em>Duration</em>: 3 months</li>
+        <li><em>Role</em>: UX Designer, UX Researcher, Frontend Developer</li>
+        <li><em>Tools</em>: HTML, CSS, JavaScript, Atom, GitHub</li>
+        <li><em>Overview</em>: With case studies in hand, I set out to find a way to share my skills and processes as a UX Designer to recruiters and hiring managers.</li>
+      </ul>
+    </div>
+
+    <hr>
+
+  <div class="row">
+    <div class="sticky column col-md-2 col-lg-3 col-xl-3">
+      <div>
+          <nav id="caseStudyNav">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="#research">Research</a></li>
+              <li><a href="#coding">Coding</a></li>
+              <li><a href="#testing">Testing</a></li>
+              <li><a href="#whatsNext">What's next?</a></li>
+              <li><a href="#takeaways">Takeaways</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    <div class="column col-md-10 col-lg-9 col-xl-9">
+    <div id="background">
+      <h1 class="center">Background</h1>
+      <em>Problem</em>
+      <p>
+        How might I… showcase my skills and processes as a UX Designer and information about myself to recruiters and hiring managers?
+      </p>
+
+      <em>Outcome</em>
+      <p>
+        I coded a website to use as my portfolio.
+      </p>
+
+      <em>Challenges</em>
+      <p>
+        See <a href="#takeaways">Takeaways</a> below for more details.
+      </p>
+      <ul>
+        <li>Keeping a mobile-first mindset</li>
+        <li>Adjusting color contrast for accessibility without compromising aesthetics</li>
+      </ul>
+    </div>
+
+    <hr>
+
+    <div id="research">
+      <h1 class="center">Research</h1>
+      <p>
+        By searching for UX Design job listings on several platforms (Linkedin, Indeed, BuiltIn to name a few), I learned it is <span class="highlight">common and expected for UX Designers to have a portfolio of their case studies.</span> Having just finished a course in frontend development, I decided to put my skills to work by coding my own website.
+      </p>
+      <p>
+        Before starting to code, I looked to other UX Designers’ portfolios for inspiration. Thinking about the website from my goal audience’s perspective (recruiters and hiring managers), I wanted my portfolio to be…
+      </p>
+      <ul>
+        <li>Approachable and intriguing</li>
+        <li>Minimalistic in design and layout to reflect my style</li>
+        <li>Responsive to ensure the portfolio can be used in many contexts</li>
+        <li>Accessible to demonstrate my commitment to accessibility</li>
+      </ul>
+    </div>
+
+    <hr>
+
+    <div>
+      <h1 class="center">Information Architecture</h1>
+      <p>
+        Then I began <span class="highlight">gathering and organizing my portfolio content</span>, deciding on the following sitemap:
+      </p>
+      <picture>
+        <source srcset="img/portfolio/sitemap@1x.png" media="(max-width:767px)">
+        <img src="img/portfolio/sitemap@2x.png" alt="information architecture sitemap of website">
+      </picture>
+    </div>
+
+    <hr>
+
+    <div id="coding" class="row">
+      <h1 class="center">Creating the Website</h1>
+        <div>
+          <p>
+            With some wireframes and all the content on hand, I began <span class="highlight">coding using Atom</span>.
+          </p>
+          <p>
+            I wrote the structure and content of the website with HTML. I added some styling using CSS. Then, using Javascript, I added interactivity (hamburger menu for navigation on smaller screen sizes).
+          </p>
+          <p>
+            Throughout this process, I <span class="highlight">used a repository on GitHub</span> to commit changes and trial changes using branches.
+          </p>
+        </div>
+      </div>
+      <picture>
+        <source srcset="img/portfolio/coding@1x.png" media="(max-width:767px)">
+        <img src="img/portfolio/coding@2x.png" class="resize" alt="post-it notes with writings on the wall in groupings">
+      </picture>
+
+    <hr>
+
+    <div id="testing">
+      <h1 class="center">Testing & Iterations</h1>
+      <p>
+        With a working website through GitHub, I tested my portfolio with four users. Here are the <span class="highlight">changes that were made based on test results</span>.
+      </p>
+    </div>
+
+    <div>
+      <h2 class="center">Color Scheme</h2>
+      <div>
+        <p>
+          During testing, participants were asked to give overall impressions of the website. Many pointed to the <span class="highlight">consistent use of a color scheme</span> when talking about the website looking professional.
+        </p>
+        <p>
+          Furthermore, accessibility testing on color contrast showed hover/focus states on my buttons did not meet WCAG 2.0 requirements to be AA compliant.
+        </p>
+        <p>
+          I returned to my goals of making my portfolio "approachable" and "intriguing". Upon analysis of participant remarks regarding what made the porfolio professional, I realized the answer was the consistent use of a color scheme for a cohesive look rather than the use of "professional colors".
+        </p>
+        <p>
+          I adjusted the color scheme to use brighter colors to help me meet my goals as well as keep the website looking professional. I also fixed color contrast issues for focused & hover states on site elements to be AA compliant.
+        </p>
+        <div>
+          <picture>
+            <source srcset="img/portfolio/colors@1x.png" media="(max-width:767px)">
+            <img src="img/portfolio/colors@2x.png" alt="before and after of color scheme">
+          </picture>
+          <p class="caption">
+            "It looks very professional... I love the consistency." - Test Participant
+          </p>
+        </div>
+        <p>
+          <em>Solution</em>
+          <ul>
+            <li>Adjust color scheme to incorporate more approachable and intriguing colors</li>
+            <li>Fix all text/background colors to be AA compliant</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div>
+      <h2 class="center">Figma Embedded Prototype</h2>
+      <div>
+        <p>
+          Based on participant feedback (see caption quote on the left), I decided to <span class="highlight">move the embedded Figma prototype to the top</span> of the case study before diving into the design process.
+        </p>
+        <p>
+          But I ran into the <span class="highlight">challenge of slow loading times</span> (the prototype was previously at the bottom of the case study allowing for the media file to load while users browsed the content above it). Additionally, the prototype was <span class="highlight">too small to be interactive on mobile screens</span>.
+        </p>
+        <p>
+          I created a responsive solution that hides the embedded prototype on mobile screens and instead shows a button that allows the user to open a new window to view the prototype.
+        </p>
+        <div>
+          <picture>
+            <source srcset="img/portfolio/prototype@1x.png" media="(max-width:767px)">
+            <img src="img/portfolio/prototype@2x.png" alt="before and after showing the embedded prototype">
+          </picture>
+          <p class="caption">
+            "In the world of woodworking reddit, you always put the final product at the top before going into how it was built." - Test Participant
+          </p>
+        </div>
+        <p>
+          <em>Solution</em>
+          <ul>
+            <li>Hide the embedded prototype on mobile screen sizes</li>
+            <li>Add button with link to Figma prototype that opens in a new window</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div>
+      <h2 class="center">Case Study Navigation</h2>
+      <div>
+        <p>
+          While using the navigation links and back to top button on a case study, one participant noted the <span class="highlight">back to top button does not lead them back to the navigation and the navigation disappears once the user scrolls past it.</span>.
+        </p>
+        <p>
+          Two participants who are full-time recruiters appreciated the clear top navigation bar that helped them <span class="highlight">find everything they needed quickly</span>.
+        </p>
+        <p>
+          I designed a new navigation on case study pages that would be just as easy to use as the top navigation bar.
+        </p>
+        <div>
+          <picture>
+            <source srcset="img/portfolio/navigation@1x.png" media="(max-width:767px)">
+            <img src="img/portfolio/navigation@2x.png" alt="before and after of the navigation">
+          </picture>
+          <p class="caption">
+            "On a page this long, you definitely need navigation." - Test Participant
+          </p>
+        </div>
+        <p>
+          <em>Solution</em>
+          <ul>
+            <li>Add sticky left column with navigation links</li>
+            <li>Add button with link to Figma prototype that opens in a new window</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div id="whatsNext">
+      <h1 class="center">What's next?</h1>
+        <p>
+          While lots of hard work and time went into this website, there is always room for improvement. Next steps in improving my portfolio would include...
+        </p>
+        <ul>
+          <li>Improving accessibility by <span class="highlight">programming focus order</span> on all pages</li>
+          <li><span class="highlight">Continuing user testing</span> by asking hiring managers and recruiters for feedback</li>
+          <li>Measuring the impact of this project by <span class="highlight">landing a job in UX Design</span> ;)</li>
+        </ul>
+      </div>
+
+      <hr>
+
+      <div id="takeaways">
+        <h1 class="center">Takeaways</h1>
+        <em>Appreciation for developers</em>
+        <p>
+          I took a frontend development course and decided to code my own website to <span class="highlight">acquire foundational understanding of HTML and CSS</span>. I knew this would help me understand the design constraints and help collaboration with dev teams. What I didn't expect was how much of an appreciation I would <i>develop</i> (pun intended) for coders and programmers. I truly loved learning something new and problem-solving aspects of coding but I'm happy to hand off this job to someone more detail-oriented and patient than me.
+        </p>
+        <em>Accepting my own limitations</em>
+        <p>
+          I found accessibility to be much more difficult than expected. Coming from a background of working with people with disabilities, I wanted to demonstrate my commitment to accessibility through my own portfolio. Beyond color contrast checks and including alternative texts for all visual elements, I quickly realized my <span class="highlight">limitations on addressing accessibility issues</span>. Thankfully there are so many tools for website building and hosting these days that have much bigger capabilities for making my portfolio accessible. That is one of the reasons why you may be reading this case study from a website I did not code myself.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!--JQuery & JavaScript-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
+
+</body>
+
+<!--Footer-->
+<footer id="contact">
+  <div class="container center">
+    <div>
+      <h1>Get in touch</h1>
+      <span>
+        Get in touch to get to know me better or to work with me!
+      </span>
+      <a href="mailto:jshin0711@gmail.com">Contact me</a>
+    </div>
+
+    <!--Socials-->
+    <nav class="contact">
+      <ul>
+        <li>
+          <a href="mailto:jshin0711@gmail.com" class="email icon" target="_blank">
+            <i class="fa-solid fa-envelope fa-fw"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://linkedin.com/in/jae-shin" class="icon" target="_blank">
+            <i class="fa-brands fa-linkedin fa-fw"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <p>Copyright &copy; Jae Shin 2022</p>
+  </div>
+</footer>
+
+</html>
