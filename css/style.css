@@ -504,10 +504,6 @@ a:focus {
     padding: 12px;
   }
 
-  #resumeButton {
-    display: none;
-  }
-
   #backToTop {
     padding: 15px;
     border-radius: 15px;
