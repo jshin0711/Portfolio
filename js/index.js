@@ -36,6 +36,16 @@ function topFunction () {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+// When the user scrolls the page, execute myFunction
+window.onscroll = function () { myFunction(); };
+
+function myFunction () {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById('myBar').style.width = scrolled + '%';
+}
+
 // Replay animation
 function refreshPage () {
   window.location.reload();
